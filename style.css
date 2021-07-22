@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  background-color: #17181c;
+}
+header {
+  background-color: #255ff4;
+  color: #e3e4e8;
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: fixed;
+  top: 0;
+}
+
+.petrol-pump {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.petrol-pump p {
+  font-size: 20px;
+  margin: 30px 0 20px;
+  text-align: center;
+  color: #e3e4e8;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+input {
+  margin: 5px;
+  width: 130px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #454954;
+  color: #e3e4e8;
+}
+input::placeholder {
+  color: #c7c7c7;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.err-text {
+  color: #e3e4e8;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.start-btn {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  z-index: 1;
+  background: #fb9c5b;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.start-btn::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 55%;
+  background: #255ff4;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+
+.start-btn::after {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 55%;
+  right: 0;
+  top: 0;
+  background: #255ff4;
+  border-radius: 5px;
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+
+.start-btn:hover:before {
+  width: 0;
+}
+
+.start-btn:hover:after {
+  width: 0;
+}
+
+.output-wrapper {
+  width: 400px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  color: #e3e4e8;
+}
+.output-petrolpump {
+  margin-bottom: 20px;
+}
+.output-p {
+  word-spacing: 3px;
+}
