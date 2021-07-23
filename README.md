@@ -8,7 +8,7 @@ There is a car with 50L of petrol. <br/>
 It needs to travel from 0 to 100 KMs. <br/>
 The car moves in steps, at each step car can move between 0 KM to 6 KM (generate a random number).<br/>
 The car has a mileage of 0.5 KM/L. <br/>
-You can place 6 random petrol pumps on the road. < br/>
+You can place 6 random petrol pumps on the road. <br/>
 Every time the car reaches the petrol pump exactly, the car gets a refill of 30 L. <br/>
 Write a JavaScript code to run this game and print every step of the car with the current position, petrol remaining. <br/> 
 Add a button on the page "Start" which should start the game. <br/>
